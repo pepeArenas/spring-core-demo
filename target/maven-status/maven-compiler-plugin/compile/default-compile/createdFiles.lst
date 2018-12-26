@@ -1,0 +1,6 @@
+com/training/repository/CustomerRepository.class
+com/training/service/CustomerService.class
+com/training/Client.class
+com/training/model/Customer.class
+com/training/repository/HibernateRepositoryImpl.class
+com/training/service/CustomerServiceImpl.class
