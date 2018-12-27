@@ -7,9 +7,14 @@ import java.util.List;
 
 public class CustomerServiceImpl implements CustomerService {
 
+
     private CustomerRepository repository;
 
-    public CustomerServiceImpl(CustomerRepository repository) {
+    /*
+    By type is not matter what the name is of the setter because is going to resolve by type
+    but is MUST be a setter
+    * */
+    public void setFoo(CustomerRepository repository) {
         this.repository = repository;
     }
 
