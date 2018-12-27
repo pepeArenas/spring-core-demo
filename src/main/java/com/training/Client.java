@@ -10,7 +10,6 @@ import java.util.List;
 public class Client {
 
     public static void main(String[] args) {
-        //CustomerService service = new CustomerServiceImpl();
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         CustomerService service = applicationContext.getBean("customerService", CustomerService.class);
 
