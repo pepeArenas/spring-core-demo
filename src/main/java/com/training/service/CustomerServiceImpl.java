@@ -13,8 +13,8 @@ public class CustomerServiceImpl implements CustomerService {
     private CustomerRepository repository;
 
     @Autowired
-    public void setRepository(CustomerRepository repository) {
-        System.out.println("Setter injection via autowired java configuration");
+    public CustomerServiceImpl(CustomerRepository repository) {
+        System.out.println("Using autowired in constructor injection");
         this.repository = repository;
     }
 
