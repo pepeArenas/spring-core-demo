@@ -15,7 +15,8 @@ public class Client {
         CustomerService service = applicationContext.getBean("customerService", CustomerService.class);
         System.out.println(service);
         CustomerService service2 = applicationContext.getBean("customerService", CustomerService.class);
-        System.out.println(service2);
+        System.out.println(service2
+        );
         List<Customer> customers = service.findAll();
         System.out.printf("Name: %s name again: %<s", customers.get(0).getName());
         System.out.println();
